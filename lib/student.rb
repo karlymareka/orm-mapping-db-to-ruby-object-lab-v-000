@@ -101,6 +101,6 @@ class Student
     sql = "SELECT *
     FROM students
     WHERE grade = ?"
-    
+    DB[:conn].execute(sql, grade)
   end 
 end
