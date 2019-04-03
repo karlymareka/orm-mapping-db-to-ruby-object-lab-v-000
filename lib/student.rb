@@ -95,5 +95,7 @@ class Student
     LIMIT 1"
     student_info = DB[:conn].execute(sql)
     student = self.new_from_db(student_info[0])
-  end 
+  end
+  
+  
 end
