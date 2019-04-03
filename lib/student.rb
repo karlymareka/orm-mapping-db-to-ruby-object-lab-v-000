@@ -97,7 +97,9 @@ class Student
     student = self.new_from_db(student_info[0])
   end
   
-  def self.all_students_in_grade_X
-    
+  def self.all_students_in_grade_X(grade)
+    sql = "SELECT *
+    FROM students
+    WHERE grade = ?"
   end 
 end
