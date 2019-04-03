@@ -94,4 +94,5 @@ class Student
     WHERE grade = 10 
     LIMIT 1"
     DB[:conn].execute(sql)
+  end 
 end
