@@ -101,5 +101,6 @@ class Student
     sql = "SELECT *
     FROM students
     WHERE grade = ?"
+    
   end 
 end
