@@ -93,7 +93,7 @@ class Student
     FROM students
     WHERE grade = 10 
     LIMIT 1"
-    student = DB[:conn].execute(sql)
-    return student[0]
+    student_info = DB[:conn].execute(sql)
+    student = self.new_from_db(student_info[0])
   end 
 end
